@@ -97,7 +97,6 @@ public class XlsxSaxAnalyser extends BaseSaxAnalyser {
             xmlReader.parse(sheetSource);
             inputStream.close();
         } catch (Exception e) {
-            e.printStackTrace();
             throw new ExcelAnalysisException(e);
         }
     }
